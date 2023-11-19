@@ -9,7 +9,8 @@
     <link rel="shortcut icon" href="asset/icon/Google Stadia Logo - 640x640.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -27,16 +28,68 @@
                 </a>
                 <ul class="ul-escritorio">
                     <a href="index.html">
-                        <li class="li-escritorio"><img src="asset/icon/casa.png" alt="" width="20px" height="20px"><a
-                                href="index.html">Inicio</a></li>
+                        <li class="li-escritorio"><a href="index.html" class="color">Inicio</a></li>
                     </a>
                     <a href="requisitos.html">
-                        <li class="li-escritorio"><img src="asset/icon/requisito.png" alt="" width="20px"
-                                height="20px"><a href="requisitos/requisitos.html">Requisitos</a></li>
+                        <li class="li-escritorio requisitos">
+                            <a href="#" class="color">Requisitos</a><img src="asset/icon/flecha-hacia-abajo.png" alt=""
+                                width="10px" height="10px">
+                            <ul class="menu-desplegable">
+                                <li>
+                                    <a href="altosrequisitos.html"><img src="asset/icon/carpeta.png" alt="" width="15px"
+                                            height="15px">Altos
+                                        requisitos</a>
+                                </li>
+                                <li>
+                                    <a href="mediosrequisitos.html"><img src="asset/icon/carpeta.png" alt=""
+                                            width="15px" height="15px">Medios requisitos</a>
+                                </li>
+                                <li>
+                                    <a href="pocosrequisitos.html"><img src="asset/icon/carpeta.png" alt="" width="15px"
+                                            height="15px">Pocos
+                                        requisitos</a>
+                                </li>
+                            </ul>
+                        </li>
                     </a>
-                    <a href="generos.html">
-                        <li class="li-escritorio"><img src="asset/icon/genero-masculino.png" alt="" width="20px"
-                                height="20px"><a href="generos/generos.html">Generos</a></li>
+                    <a href="generos.html" class="header-a">
+                        <li class="li-escritorio generos"><a href="#" class="color">Generos</a><img
+                                src="asset/icon/flecha-hacia-abajo.png" alt="" width="10px" height="10px">
+                            <ul class="menu-desplegable">
+                                <li>
+                                    <a href="juegosdeaccion.html"><img src="asset/icon/circulo-de-flecha.png" alt=""
+                                            width="15px" height="15px">Accion</a>
+                                </li>
+                                <li>
+                                    <a href="juegosdeaventura.html"><img src="asset/icon/circulo-de-flecha.png" alt=""
+                                            width="15px" height="15px">Aventura</a>
+                                </li>
+                                <li>
+                                    <a href="juegosdeestrategia.html"><img src="asset/icon/circulo-de-flecha.png" alt=""
+                                            width="15px" height="15px">Estrategia</a>
+                                </li>
+                                <li>
+                                    <a href="juegosdeconduccion.html"><img src="asset/icon/circulo-de-flecha.png" alt=""
+                                            width="15px" height="15px">Conduccion</a>
+                                </li>
+                                <li>
+                                    <a href="juegosdesimulacion.html"><img src="asset/icon/circulo-de-flecha.png" alt=""
+                                            width="15px" height="15px">Simulacion</a>
+                                </li>
+                                <li>
+                                    <a href="juegosdedeportes.html"><img src="asset/icon/circulo-de-flecha.png" alt=""
+                                            width="15px" height="15px">Deportes</a>
+                                </li>
+                                <li>
+                                    <a href="juegosdeterror.html"><img src="asset/icon/circulo-de-flecha.png" alt=""
+                                            width="15px" height="15px">Terror</a>
+                                </li>
+                                <li>
+                                    <a href="juegosderol.html"><img src="asset/icon/circulo-de-flecha.png" alt=""
+                                            width="15px" height="15px">Rol</a>
+                                </li>
+                            </ul>
+                        </li>
                     </a>
                 </ul>
             </nav>
@@ -61,9 +114,20 @@
                         <input type="text" placeholder="Buscar Juegos" name="buscar" class="buscar">
                     </form>
                 </div>
-                <a href="index.html">Inicio</a>
-                <a href="requisitos/requisitos.html">Requisitos</a>
-                <a href="generos/generos.html">Generos</a>
+                <div>
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li>
+                            <a href="">Requisitos</a>
+                            <ul>
+                                <li><a href="">Altos requisitos</a></li>
+                                <li><a href="">Medios requisitos</a></li>
+                                <li><a href="">Bajos requisitos</a></li>
+                            </ul>
+                            </li>
+                        <li><a href="">Generos</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -73,7 +137,7 @@
             <img src="asset/icon/flecha-correcta.png" alt="" width="20px" height="20px">
             <h2>Altos Requisitos</h2>
         </div>
-        <a href="altos-requisitos/altosrequisitos.html" class="vermas">Ver mas</a>
+        <a href="altosrequisitos.html" class="vermas">Ver mas</a>
     </div>
 
     <section>
@@ -116,7 +180,7 @@
             <img src="asset/icon/flecha-correcta.png" alt="" width="20px" height="20px">
             <h2>Medios Requisitos</h2>
         </div>
-        <a href="medios-requisitos/mediosrequisitos.html" class="vermas">Ver mas</a>
+        <a href="mediosrequisitos.html" class="vermas">Ver mas</a>
     </div>
 
     <section>
@@ -159,7 +223,7 @@
             <img src="asset/icon/flecha-correcta.png" alt="" width="20px" height="20px">
             <h2>Pocos Requisitos</h2>
         </div>
-        <a href="pocos-requisitos/pocosrequisitos.html" class="vermas">Ver mas</a>
+        <a href="pocosrequisitos.html" class="vermas">Ver mas</a>
     </div>
 
     <section>
@@ -208,11 +272,11 @@
 
     <footer>
         <div class="div-link-footer">
-            <a href="agregar-juegos/agregar-juegos.html">
+            <a href="agregarjuegos.html">
                 <img src="asset/icon/usuario.png" alt="" width="20px" height="20px">
                 <h4>Agregar Juegos</h4>
             </a>
-            <a href="como-instalar-juegos/como-instalar-juegos.html" class="margin">
+            <a href="comoinstalarjuegos.html" class="margin">
                 <img src="asset/icon/consola.png" alt="" width="20px" height="20px">
                 <h4>Como Instalar Juegos</h4>
             </a>
