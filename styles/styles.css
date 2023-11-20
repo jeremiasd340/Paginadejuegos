@@ -1,5 +1,6 @@
 :root {
-    --box-shadow: 1px 1px 40px 1px #2846b19d;
+    --box-shadow: 1px 1px 9px 7px #2747bc;
+    --box-shadow2: 1px 1px 50px 10px #2747bc;
 }
 
 body {
@@ -7,7 +8,6 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 
@@ -70,13 +70,14 @@ header nav .li-escritorio .color:hover {
 
 .menu-desplegable {
     background-color: #080f28;
+    background-color: ;
     display: none;
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 1px 1px 5px 1px black;
+    box-shadow: 1px -1px 5px 3px #2747bc;
 }
 
 .menu-desplegable a {
@@ -91,11 +92,17 @@ header nav .li-escritorio .color:hover {
 .menu-desplegable li {
     list-style: none;
     text-align: left;
+    margin-bottom: 3px;
 }
 
-.menu-desplegable li:hover {
-    background-color: rgba(0, 0, 0, 0.399);
-    border-radius: 10px;
+.menu-desplegable li a {
+    border-radius: 20px;
+
+    transition: box-shadow .2s;
+}
+
+.menu-desplegable li a:hover {
+    box-shadow: 1px 1px 8px 5px #1f3fb3;
 }
 
 .menu-desplegable a img {
@@ -114,12 +121,13 @@ form {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 form img {
-    position: relative;
-    top: 1px;
-    transform: translateX(27px);
+    position: absolute;
+    top: 12px;
+    left: 6px;
 }
 
 #buscar {
@@ -131,12 +139,12 @@ form img {
     padding-left: 30px;
     overflow: hidden;
     color: white;
+    transition: width .25s;
 }
 
 #buscar:focus {
     outline: 1px solid white;
     width: 250px;
-    transition: width .25s;
 }
 
 #buscar::placeholder {
@@ -187,11 +195,11 @@ form img {
     width: 80px;
     height: 30px;
     border-radius: 20px;
+    transition: background-color .1s;
 }
 
 .vermas:hover {
     background-color: #1c348c6e;
-    transition: background-color .1s;
 }
 
 .altos-requisitos .vermas {
@@ -235,11 +243,11 @@ form img {
     width: 80px;
     height: 30px;
     border-radius: 20px;
+    transition: background-color .1s;
 }
 
 .vermas:hover {
     background-color: #1c348c6e;
-    transition: background-color .1s;
 }
 
 .medios-requisitos .vermas {
@@ -283,11 +291,11 @@ form img {
     width: 80px;
     height: 30px;
     border-radius: 20px;
+    transition: background-color .1s;
 }
 
 .vermas:hover {
     background-color: #1c348c6e;
-    transition: background-color .1s;
 }
 
 .pocos-requisitos .vermas {
@@ -312,10 +320,13 @@ article {
     color: white;
 }
 
+article img {
+    transition: all .3s;
+}
+
 article img:hover {
     transform: scale(1.1);
     filter: brightness(0.50);
-    transition: .1s;
 }
 
 .div-article {
@@ -344,7 +355,7 @@ article img:hover {
     background-color: #2747bc;
     height: 5px;
     border: 0;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow2);
 }
 
 .sobre-nosotros p {
@@ -429,10 +440,52 @@ footer {
         top: 0;
         left: -100%;
         left: 0;
+        z-index: 1;
         margin: 0;
         width: 50%;
         height: 100%;
         transition: all .5s;
+        overflow: scroll;
+    }
+
+    .lista-menu-responsive {
+        padding: 0;
+    }
+
+    .encabezados-responsive {
+        list-style: none;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .lista-menu-responsive img {
+        margin-left: 5px;
+    }
+
+    .encabezados-responsive a {
+        color: white;
+        margin: 0;
+    }
+
+    .requisitos-responsive {
+        padding: 0;
+    }
+
+    .requisitos-responsive li {
+        list-style: none;
+    }
+
+    .generos-responsive {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
+
+    .generos-responsive li {
+        list-style: none;
     }
 
     .responsive {
@@ -469,20 +522,6 @@ footer {
     }
 }
 
-@media screen and (max-width:375px) {
-    header {
-        margin: 40px 10px;
-    }
-
-    header nav {
-        width: 90%;
-    }
-
-    .div-link-footer {
-        flex-direction: column;
-    }
-}
-
 @media screen and (max-width:425px) {
     header {
         margin: 40px 10px;
@@ -490,5 +529,28 @@ footer {
 
     header h1 {
         font-size: 25px;
+    }
+
+    .div-form {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:375px) {
+    header {
+        margin: 40px 10px;
+    }
+
+    header nav {
+        width: 80%;
+    }
+
+    .div-link-footer {
+        flex-direction: column;
+    }
+
+    .div-form {
+        width: 100%;
     }
 }
