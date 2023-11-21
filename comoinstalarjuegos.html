@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GamesWorld | Descubre increibles juegos</title>
-    <link rel="stylesheet" href="como-instalar-juegos.css">
+    <link rel="stylesheet" href="styles/comoinstalarjuegos.css">
     <link rel="shortcut icon" href="asset/icon/Google Stadia Logo - 640x640.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -27,16 +28,68 @@
                 </a>
                 <ul class="ul-escritorio">
                     <a href="index.html">
-                        <li class="li-escritorio"><img src="asset/icon/casa.png" alt="" width="20px" height="20px"><a
-                                href="index.html">Inicio</a></li>
+                        <li class="li-escritorio"><a href="index.html" class="color">Inicio</a></li>
                     </a>
                     <a href="requisitos.html">
-                        <li class="li-escritorio"><img src="asset/icon/requisito.png" alt="" width="20px"
-                                height="20px"><a href="requisitos.html">Requisitos</a></li>
+                        <li class="li-escritorio requisitos">
+                            <a href="#" class="color">Requisitos</a><img src="asset/icon/flecha-hacia-abajo.png" alt=""
+                                width="10px" height="10px">
+                            <ul class="menu-desplegable">
+                                <li>
+                                    <a href="altosrequisitos.html"><img src="asset/icon/carpeta.png" alt="" width="15px"
+                                            height="15px">Altos
+                                        requisitos</a>
+                                </li>
+                                <li>
+                                    <a href="mediosrequisitos.html"><img src="asset/icon/carpeta.png" alt=""
+                                            width="15px" height="15px">Medios requisitos</a>
+                                </li>
+                                <li>
+                                    <a href="pocosrequisitos.html"><img src="asset/icon/carpeta.png" alt="" width="15px"
+                                            height="15px">Pocos
+                                        requisitos</a>
+                                </li>
+                            </ul>
+                        </li>
                     </a>
-                    <a href="generos.html">
-                        <li class="li-escritorio"><img src="asset/icon/genero-masculino.png" alt="" width="20px"
-                                height="20px"><a href="generos.html">Generos</a></li>
+                    <a href="generos.html" class="header-a">
+                        <li class="li-escritorio generos"><a href="#" class="color">Generos</a><img
+                                src="asset/icon/flecha-hacia-abajo.png" alt="" width="10px" height="10px">
+                            <ul class="menu-desplegable">
+                                <li>
+                                    <a href="juegosdeaccion.html"><img src="asset/icon/circulo-de-flecha.png" alt=""
+                                            width="15px" height="15px">Accion</a>
+                                </li>
+                                <li>
+                                    <a href="juegosdeaventura.html"><img src="asset/icon/circulo-de-flecha.png" alt=""
+                                            width="15px" height="15px">Aventura</a>
+                                </li>
+                                <li>
+                                    <a href="juegosdeestrategia.html"><img src="asset/icon/circulo-de-flecha.png" alt=""
+                                            width="15px" height="15px">Estrategia</a>
+                                </li>
+                                <li>
+                                    <a href="juegosdeconduccion.html"><img src="asset/icon/circulo-de-flecha.png" alt=""
+                                            width="15px" height="15px">Conduccion</a>
+                                </li>
+                                <li>
+                                    <a href="juegosdesimulacion.html"><img src="asset/icon/circulo-de-flecha.png" alt=""
+                                            width="15px" height="15px">Simulacion</a>
+                                </li>
+                                <li>
+                                    <a href="juegosdedeportes.html"><img src="asset/icon/circulo-de-flecha.png" alt=""
+                                            width="15px" height="15px">Deportes</a>
+                                </li>
+                                <li>
+                                    <a href="juegosdeterror.html"><img src="asset/icon/circulo-de-flecha.png" alt=""
+                                            width="15px" height="15px">Terror</a>
+                                </li>
+                                <li>
+                                    <a href="juegosderol.html"><img src="asset/icon/circulo-de-flecha.png" alt=""
+                                            width="15px" height="15px">Rol</a>
+                                </li>
+                            </ul>
+                        </li>
                     </a>
                 </ul>
             </nav>
@@ -51,23 +104,116 @@
         <div class="div-menu">
             <img src="asset/icon/menu.png" alt="" width="50px" height="50px" class="img-menu">
             <nav class="nav">
-                <a href="index.html" class="header__a responsive">
-                    <img src="asset/icon/Google Stadia Logo - 640x640.png" alt="" width="50px" height="50px">
-                    <h1>GamesWorld</h1>
-                </a>
+                <div>
+                    <a href="#" class="header__a responsive">
+                        <img src="asset/icon/Google Stadia Logo - 640x640.png" alt="" width="50px" height="50px">
+                        <h1>GamesWorld</h1>
+                    </a>
+                </div>
                 <div class="div-form">
                     <form action="" method="get">
                         <img src="asset/icon/buscar.png" alt="" width="20px" height="20px">
                         <input type="text" placeholder="Buscar Juegos" name="buscar" class="buscar">
                     </form>
                 </div>
-                <a href="index.html">Inicio</a>
-                <a href="requisitos.html">Requisitos</a>
-                <a href="generos.html">Generos</a>
+                <div>
+                    <ul class="lista-menu-responsive">
+                        <li class="encabezados-responsive"><a href="#">Inicio</a></li>
+                        <li class="encabezados-responsive">
+                            <a href="#">Requisitos</a><img src="asset/icon/flecha-hacia-abajo.png" alt="" width="15px"
+                                height="15px">
+                        </li>
+                        <ul class="requisitos-responsive">
+                            <li><a href="">Altos requisitos</a></li>
+                            <li><a href="">Medios requisitos</a></li>
+                            <li><a href="">Bajos requisitos</a></li>
+                        </ul>
+                        <li class="encabezados-responsive">
+                            <a href="#">Generos</a><img src="asset/icon/flecha-hacia-abajo.png" alt="" width="15px"
+                                height="15px">
+                    </ul>
+                    <ul class="generos-responsive">
+                        <li>
+                            <a href="juegosdeaccion.html">Accion</a>
+                        </li>
+                        <li>
+                            <a href="juegosdeaventura.html">Aventura</a>
+                        </li>
+                        <li>
+                            <a href="juegosdeestrategia.html">Estrategia</a>
+                        </li>
+                        <li>
+                            <a href="juegosdeconduccion.html">Conduccion</a>
+                        </li>
+                        <li>
+                            <a href="juegosdesimulacion.html">Simulacion</a>
+                        </li>
+                        <li>
+                            <a href="juegosdedeportes.html">Deportes</a>
+                        </li>
+                        <li>
+                            <a href="juegosdeterror.html">Terror</a>
+                        </li>
+                        <li>
+                            <a href="juegosderol.html">Rol</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
+    <section class="container1">
+        <div class="container2">
+            <h2>Cómo Instalar juego</h2>
+            <div class="div-inslatar">
+                <h3>¿Cómo instalar y crackear el Juego?</h3>
+            </div>
+            <p>Todos los juegos están comprimidos en formato en .RAR. Hay muchas programas que pueden utilizarse para
+                abrir y extraer archivos .RAR, pero recomendamos Winrar en su ultima versión para evitar problemas.</p>
+            <div class="div-inslatar">
+                <h2>1. Descomprimir el Juego</h2>
+            </div>
+            <p>Descomprimir con Winrar haciendo clic derecho sobre el archivo y darle a extraer archivos aqui.
+                Contraseña en los archivos? No utilizamos ninguna pass en nuestros archivos.
+                Después de la extracción se creará una carpeta con el nombre del juego que contiene un archivo .ISO del
+                juego en la mayoria de los casos.</p>
+            <div class="div-inslatar">
+                <h2>2. Abrir / Montar archivos iso de Juegos en Windows 11, 10 y 8</h2>
+            </div>
+            <p>Si tienes Windows 11 / 10 / 8, Solo basta con hacer clic derecho sobre el .iso y elegir la opción montar.
+                Si tienes, Windows XP o 7 necesitas instalar Daemon Tools o similar.</p>
+            <strong>NOTA IMPORTANTE para los que tengan Windows 7 / XP:</strong>
+            <p>Si tienes Windows 8 o 10 no es necesario Daemon Tools, solo clic derecho sobre el ISO y Montar.</p>
+            <p>Para montar los archivos iso (o cue o mds o mdx o mdf o bin / cue …), sigue las instrucciones de la
+                imagen
+                abajo.
+                Haz clic derecho sobre el iso de color amarillo, luego en abrir con y selecione Daemon Toos o
+                simplemente
+                doble clic en la ISO.</p>
+            <img src="asset/image/montando imagen iso del juego.jpg" alt="">
+            <div class="div-inslatar">
+                <h2>3- Cómo Instalar Juego montado</h2>
+            </div>
+            <p>Una vez que hayamos abierto nuestra ISO del juego que hayamos descargado, debemos ir a Equípo o Mi PC.
+            </p>
+            <img src="asset/image/equipo.jpg" alt="">
+            <p>Dentro de éste encontraremos nuestra imágen del juego montada.</p>
+            <p>He tomado como referencia el juego Sonic Mania para hacer este tutorial 🙂 / veremos el juego similar a
+                éste
+                montado.</p>
+            <img src="asset/image/dentro del iso.jpg" alt="">
+            <p>Como podrás ver, la ISO está montada, y podrás ver el nombre del juego y una posible pequeña imagen del
+                mismo.
+                Solo debes hacer clic derecho sobre éste y elegir Abrir, como se indica en la imágen arriba.
+            </p>
+            <div class="div-inslatar">
+                <h2>Cómo crakear el Juego una vez instalado</h2>
+            </div>
+            <p>En mi caso debió aparecer el Setup.exe (Instalador del juego) y la carpeta del crack 😀</p>
+            <img src="asset/image/iso dentro.jpg" alt="">
+        </div>
+    </section>
+</body>
 
-    <div class="container">
-
-    </div>
+</html>

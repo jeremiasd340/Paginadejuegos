@@ -5,6 +5,9 @@
 
 body {
     background-color: #080f28;
+    background-image: url(wp3852943.jpg);
+    background-size: cover;
+    background-position: center;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -177,7 +180,7 @@ form img {
 }
 
 .div-solicitar input {
-    background-color: transparent;
+    background-color: #080f28;
     width: 100%;
     height: 40px;
     border: 1px solid #1f3fb3;
@@ -190,7 +193,12 @@ form img {
 }
 
 .div-solicitar input:focus {
-    box-shadow: 0 0 10px 3px #2747bc;
+    box-shadow: 0 0 10px 1px #008cff;
+}
+
+.div-solicitar input::placeholder {
+    color: #2747bc;
+    font-size: larger;
 }
 
 form h3 {
@@ -199,12 +207,12 @@ form h3 {
 }
 
 textarea {
-    background-color: transparent;
+    background-color: #080f28;
     color: white;
     margin-bottom: 30px;
     resize: none;
     width: 300px;
-    height: 150px;
+    height: 80px;
     border: 2px solid #ffffff80;
     border-radius: 5px;
     padding: 8px;
@@ -214,15 +222,11 @@ textarea {
 }
 
 textarea:focus {
-    box-shadow: 0 0 10px 3px #2747bc;
+    box-shadow: 0 0 10px 1px #008cff;
+    outline: none;
 }
 
 textarea::placeholder {
-    color: #1f3fb3;
-    font-size: larger;
-}
-
-.div-solicitar input::placeholder {
     color: #1f3fb3;
     font-size: larger;
 }
@@ -272,6 +276,7 @@ fieldset {
 
 legend {
     font-size: larger;
+    color: white;
 }
 
 fieldset input {
@@ -292,7 +297,7 @@ fieldset input:checked {
 }
 
 .gusto {
-    color: #1f3fb3;
+    color: white;
 }
 
 .div-btn {
@@ -333,6 +338,29 @@ fieldset input:checked {
     margin-left: 10px;
 }
 
+.div-form img {
+    position: relative;
+    top: 35px;
+    left: 7px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form2 {
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(150, 149, 149);
+    border-radius: 20px;
+    width: max-content;
+    height: max-content;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
 .div-menu {
     display: none;
 }
@@ -364,7 +392,7 @@ fieldset input:checked {
     }
 
     .form2 {
-        width: 100%;
+        width: 90%;
     }
 
     fieldset {
@@ -450,17 +478,6 @@ fieldset input:checked {
     }
 }
 
-@media screen and (max-width:1040px) {
-    #buscar {
-        width: 140px;
-    }
-
-    #buscar:hover {
-        width: 140px;
-    }
-}
-
-
 @media screen and (max-width:770px) {
     fieldset {
         display: grid;
@@ -470,6 +487,13 @@ fieldset input:checked {
         text-align: left;
         width: 500px;
     }
+}
+
+@media screen and (max-width:600px) {
+    header nav {
+        width: 70%;
+    }
+
 }
 
 @media screen and (max-width:550px) {
@@ -493,21 +517,12 @@ fieldset input:checked {
         flex-wrap: wrap;
         width: 16px;
     }
-
-    .spam {}
 }
 
 @media screen and (max-width:440px) {
     fieldset {
         width: 300px;
     }
-}
-
-@media screen and (max-width:600px) {
-    header nav {
-        width: 70%;
-    }
-
 }
 
 @media screen and (max-width:425px) {
@@ -529,12 +544,6 @@ fieldset input:checked {
 @media screen and (max-width:400px) {
     .texto-checkbox {
         font-size: 15px;
-    }
-}
-
-@media screen and (max-width:340px) {
-    .texto-checkbox {
-        font-size: 90%;
     }
 }
 
@@ -573,8 +582,8 @@ fieldset input:checked {
     }
 }
 
-.div-form img {
-    position: relative;
-    top: 35px;
-    left: 7px;
+@media screen and (max-width:340px) {
+    .texto-checkbox {
+        font-size: 90%;
+    }
 }
