@@ -167,14 +167,15 @@
         <form action="" method="get" class="form2">
             <h2>Solicitar juegos</h2>
             <div class="div-solicitar">
-                <input type="text" placeholder="Ingresa tu nombre" required>
+                <input type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" required>
                 <br>
-                <input type="text" placeholder="Ingresa tu apellido" required>
+                <input type="text" placeholder="Ingresa tu apellido" name="apellido" id="apellido" required>
                 <br>
-                <input type="email" placeholder="Ingresa tu correo electronico">
+                <input type="email" placeholder="Ingresa tu correo electronico" name="email" id="email">
                 <br>
                 <div class="div-acepta">
-                    <input type="checkbox" name="" id=""><span class="texto-checkbox">Acepta que le avisemos cuando ya
+                    <input type="checkbox" name="marca" id="marca"><span class="texto-checkbox">Acepta que le avisemos
+                        cuando ya
                         alla
                         sido subido.</span>
                 </div>
@@ -183,27 +184,32 @@
                 <fieldset>
                     <legend>¿Cuanto te gusta la pagina?</legend>
                     <div>
-                        <input type="radio" name="acepta" id="acepta"><span class="gusto">Muy malo</span>
+                        <input type="radio" name="gusto" id="muymalo">
+                        <label for="muymalo"><span class="gusto">Muy malo</span></label>
                     </div>
                     <div>
-                        <input type="radio" name="acepta" id="acepta"><span class="gusto">Malo</span>
+                        <input type="radio" name="gusto" id="malo">
+                        <label for="malo"><span class="gusto">Malo</span></label>
                     </div>
                     <div>
-                        <input type="radio" name="acepta" id="acepta"><span class="gusto">Regular</span>
+                        <input type="radio" name="gusto" id="regular">
+                        <label for="regular"><span class="gusto">Regular</span></label>
                     </div>
                     <div>
-                        <input type="radio" name="acepta" id="acepta"><span class="gusto">Bueno</span>
+                        <input type="radio" name="gusto" id="bueno">
+                        <label for="bueno"><span class="gusto">Bueno</span></label>
                     </div>
                     <div>
-                        <input type="radio" name="acepta" id="acepta"><span class="gusto">Muy bueno</span>
+                        <input type="radio" name="gusto" id="muybueno">
+                        <label for="muybueno"><span class="gusto">Muy bueno</span></label>
                     </div>
                 </fieldset>
             </div>
             <h3>¿Cuales juegos quieres agregar?</h3>
-            <textarea name="" id="" cols="50" rows="5" placeholder="Ingresa los juegos que quieres agregar"
-                required></textarea>
+            <textarea name="agregarjuego" id="juegos" cols="50" rows="5"
+                placeholder="Ingresa los juegos que quieres agregar" required></textarea>
             <div class="div-btn">
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" name="btnenviar" id="enviar">
             </div>
         </form>
     </section>
@@ -226,7 +232,7 @@
             <p>&copy; GamesWorld 2023</p>
         </div>
     </footer>
-    
+
 </body>
 
 </html>
