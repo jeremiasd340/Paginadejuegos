@@ -4,10 +4,11 @@
 }
 
 body {
-    background-color: #080f28;
-    background-image: url(wp3852943.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('../asset/image/wp3852943.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -359,6 +360,42 @@ section {
     height: max-content;
     margin-bottom: 0;
     padding: 10px;
+}
+
+footer {
+    background-color: #101d4e6d;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.div-link-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-link-footer a {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.div-link-footer a:hover {
+    text-decoration: underline;
+}
+
+.div-link-footer a img {
+    margin-right: 5px;
+}
+
+.div-link-footer p {
+    color: white;
+    margin: 0;
 }
 
 .div-menu {
