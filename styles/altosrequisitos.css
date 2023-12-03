@@ -231,6 +231,7 @@ form img {
 article {
     text-align: center;
     color: white;
+    margin: 10px;
 }
 
 article img {
