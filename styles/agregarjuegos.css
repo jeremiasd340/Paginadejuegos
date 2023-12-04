@@ -229,6 +229,7 @@ textarea:focus {
 textarea::placeholder {
     color: #1f3fb3;
     font-size: larger;
+    text-align: center;
 }
 
 .div-acepta {
@@ -322,7 +323,7 @@ h2 {
 .div-btn input {
     background-color: transparent;
     outline: none;
-    width: 200px;
+    width: 322px;
     height: 50px;
     border: 1px solid #ffffff80;
     border-radius: 30px;
